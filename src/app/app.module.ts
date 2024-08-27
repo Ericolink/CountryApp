@@ -20,6 +20,7 @@ import { DbzModule } from './dbz/dbz.module';
     CounterModule,
     HeroModule,
     DbzModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
