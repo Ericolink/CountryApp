@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { CounterModule } from './counter/counter.module';
 import { AppRoutingModule } from './app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
+import { CounterModule } from './counter/counter.module';
 import { HeroModule } from './heroes/heroes.module';
 import { DbzModule } from './dbz/dbz.module';
 
+import { SharedModule } from './shared/shared.module';
+
+import { AppComponent } from './app.component';
 
 
 @NgModule({
@@ -20,7 +22,7 @@ import { DbzModule } from './dbz/dbz.module';
     CounterModule,
     HeroModule,
     DbzModule,
-    
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

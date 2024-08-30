@@ -1,7 +1,19 @@
-<h1> {{ title }}</h1>
+<!--<h1> {{ title }}</h1>
 <hr>
 <app-dbz-main-page></app-dbz-main-page>
-<!--<app-counter></app-counter>
+<app-counter></app-counter>
 <app-heroes-hero></app-heroes-hero>
-<app-heroes-list></app-heroes-list>
--->
+<app-heroes-list></app-heroes-list> -->
+
+<div class="row">
+
+  <div class="col-3">
+    <!--SideBar-->
+    <shared-sidebar></shared-sidebar>
+  </div>
+  <div class="col">
+    <!--Nuestras Paginas-->
+    <router-outlet></router-outlet>
+  </div>
+
+</div>
