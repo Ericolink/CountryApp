@@ -3,12 +3,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { CounterModule } from './counter/counter.module';
-import { HeroModule } from './heroes/heroes.module';
-import { DbzModule } from './dbz/dbz.module';
-
 import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component';
+import { provideHttpClient } from '@angular/common/http';
 
 
 @NgModule({
@@ -20,11 +18,9 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     CounterModule,
-    HeroModule,
-    DbzModule,
-    SharedModule
+    SharedModule,
   ],
-  providers: [],
+  providers: [provideHttpClient()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
